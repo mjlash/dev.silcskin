@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<script type="text/javascript" src="/slider/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/slider/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(function() {
+
+    $('#slideshow').cycle({
+        fx:      'scrollHorz',
+        timeout:  5000,
+        prev:    '#prev',
+        next:    '#next'
+    });
+    
+});
+</script>
+    <div style="text-align:center;margin:auto;width:300px">
+        <a href="#"><span id="prev">Prev</span></a> 
+        <a href="#"><span id="next">Next</span></a>
+    </div>
+    <div id="slideshow" class="pics" style="margin:auto;clear:left;margin-top:40px">
+        <img src="skin/frontend/cavetcosmetics/default/images/slide1.jpg" alt="" />
+        <img src="skin/frontend/cavetcosmetics/default/images/slide2.jpg" alt="" />
+        <img src="skin/frontend/cavetcosmetics/default/images/slide3.jpg" alt="" />
+        <img src="skin/frontend/cavetcosmetics/default/images/slide4.jpg" alt="" />
+        <img src="skin/frontend/cavetcosmetics/default/images/slide5.jpg" alt="" />
+    </div>
+</body>
+</html>
